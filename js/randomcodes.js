@@ -1,12 +1,12 @@
 var getCode = ' ';
 var btnvalue;
+var code = ' ';
+var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
 
 // RANDOM CODES
 // Function to generation combination of characters
 function generateCode() {
-    var code = ' ';
     
-    var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
     for (i = 1; i <= 8; i++) {
         var char = Math.random() * str.length;
         code += str.charAt(char);
@@ -42,7 +42,7 @@ function evaluateCode() {
 }
 
 
-disableButton();
+// disableButton();
 
 
 
